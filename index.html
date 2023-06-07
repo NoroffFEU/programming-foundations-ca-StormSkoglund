@@ -3,21 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Programming Foundations CA</title>
+    <meta
+      name="description"
+      content="This is my page about my favorite feathery f(r)iend, Ove the budgie. This site is a demonstration of javaScript, CSS and HTML."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Oswald&display=swap"
+      rel="stylesheet"
+    />
+    <title>Budgie interface</title>
     <link href="css/style.css" rel="stylesheet" />
     <link rel="icon" href="data:;base64,=" />
   </head>
 
   <body>
     <h1>Ove the budgie</h1>
-    <p></p>
     <img
       class="Ove"
       src="images/Ove.jpg"
       alt="A picture of a budgie looking at its own reflection in the mirror"
     />
-    <h2>Don't pet the bird</h2>
-    <button>Pet the bird</button>
+    <h2 class="feather-facts">FEATHER FACTS</h2>
+    <!--/* The article element, and its "display: none" status, underneath was added in order to hide the object and its list.
+in order to achieve this, i followed the short tutorial on this website https://www.shecodes.io/athena/3469-how-to-display-text-when-a-button-is-clicked-with-javascript [viewed on 07-06-2023], NB I found out that this site is driven by a chatbot of sorts,  I didn't know this initially, it seemed like a regular coding blog, I am unsure if this is acceptable -->
+    <article style="display: none">
+      <div class="facts"><span>Type:</span> <span id="type"></span></div>
+      <div class="facts"><span>Species:</span> <span id="species"></span></div>
+      <div class="facts">
+        <span>Noise level:</span> <span id="noiseLevel"></span>
+      </div>
+      <div class="facts"><span>Name:</span> <span id="name"></span></div>
+      <div class="facts"><span>Colors:</span> <span id="colors"></span></div>
+      <div class="facts"><span>Age:</span> <span id="age"></span></div>
+      <div class="facts"><span>Hobbies:</span> <span id="hobbies"></span></div>
+      <div class="facts"><span>Friends:</span> <span id="friends"></span></div>
+      <div class="facts">
+        <span>Domesticated:</span> <span id="domesticated"></span>
+      </div>
+      <div class="facts">
+        <span>Always hungry:</span> <span id="alwaysHungry"></span>
+      </div>
+      <!-- S<div class="facts">
+        <span>Friendly towards:</span> <span id="friendlyTowards"></span>
+      </div>
+      <div class="facts">
+        <span>Favorite food:</span> <span id="favoriteFood"></span>
+      </div> -->
+    </article>
+    <h2>SHOW BUDGIE STATS</h2>
+
+    <button class="fact-box">PRESS FOR FEATHERY FACTS</button>
+
+    <h2 class="pet">Don't pet the bird</h2>
+    <button class="bite">PET THE BIRD</button>
 
     <script src="js/budgie.js"></script>
   </body>

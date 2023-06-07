@@ -1,19 +1,37 @@
+:root {
+  --my-shadow: 0px 10px 10px rgb(227, 79, 79);
+  --my-background: rgb(80, 82, 70);
+}
+
 body {
-  font-family: sans-serif;
   padding: 1em 3em;
-  background-color: rgb(80, 82, 70);
+  background-color: var(--my-background);
 }
 .Ove {
   display: block;
   max-width: 50vw;
   margin: auto;
   border-radius: 40px;
+  box-shadow: var(--my-shadow);
+  opacity: 90%;
+}
+
+h1 {
+  font-family: "Oswald", "Times New Roman", Times, serif;
+  background-color: cadetblue;
+  border-bottom-left-radius: 60px;
+  border-top-right-radius: 60px;
+}
+
+h2 {
+  font-family: "Nunito Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 h1,
 h2 {
   text-align: center;
-  color: aliceblue;
+  color: rgb(255, 255, 255);
   font-weight: bolder;
 }
 
@@ -23,8 +41,29 @@ button {
   margin: auto;
   font-size: larger;
   font-weight: bolder;
-  color: red(255, 255, 255);
-  background-color: rgb(18, 227, 77);
+  color: rgb(38, 41, 28);
+  background-color: rgb(74, 200, 89);
   border: none;
-  box-shadow: 5px 10px 15px red;
+  box-shadow: var(--my-shadow);
+  font-family: "Oswald", "Times New Roman", Times, serif;
+}
+
+button:hover {
+  background-color: aqua;
+  text-shadow: var(--my-shadow);
+  border-radius: 20px;
+  padding: 2em 4em 2em;
+  transition-delay: 250ms;
+}
+
+.facts {
+  text-align: center;
+  font-size: xx-large;
+  padding: 2%;
+  margin: 1%;
+  background-color: cadetblue;
+  color: white;
+  border-radius: 40px;
+  font-family: "Nunito Sans", "Lucida Sans", "Lucida Sans Regular",
+    "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
