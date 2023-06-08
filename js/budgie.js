@@ -35,6 +35,7 @@ var budgie = {
       other: "What Olga is having",
     },
   ],*/
+  // getElementByID finds the ID of elements in the HTML file, and inserts properties from the object list. We were given an example with a motorbike in javaScript (delivered to on the discord "januar-2023-full-time" server, on 06/02/2023), where this method was demonstrated. I wanted to use the same methods, but in a different way, where the object list is hidden, until you call a function.
   featherFacts: function featherFacts() {
     document.getElementById("type").textContent = budgie.type;
     document.getElementById("species").textContent = budgie.species;
