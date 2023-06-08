@@ -53,7 +53,7 @@ button:hover {
   text-shadow: var(--my-shadow);
   border-radius: 20px;
   padding: 2em 4em 2em;
-  transition-delay: 250ms;
+  transition-delay: 150ms;
 }
 
 .facts {

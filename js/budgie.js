@@ -17,24 +17,13 @@ var budgie = {
   friends: ["Olga", " Louise", " Alex"],
   domesticated: false,
   alwaysHungry: true,
-  /*friendlyTowards: {
-    things: true,
-    people: "Sometimes",
-    otherBudgies: false,
+
+  //Function whereas you get bitten by Ove the budgie, if you try to pet him (Background changes color to red and a warning text appears).
+  bite: function newHeadingAndBackground() {
+    heading.innerHTML = "You've been bitten";
+    heading.style.fontSize = "xxx-large";
+    background.style.backgroundColor = "red";
   },
-  favoriteFood: [
-    {
-      type: "millet",
-      brand: "random unnamed bags from the pet store",
-    },
-    {
-      type: "mixed bird seeds and pellets",
-      brand: "Versele-Laga Prestige",
-    },
-    {
-      other: "What Olga is having",
-    },
-  ],*/
   // getElementByID finds the ID of elements in the HTML file, and inserts properties from the object list. We were given an example with a motorbike in javaScript (delivered to on the discord "januar-2023-full-time" server, on 06/02/2023), where this method was demonstrated. I wanted to use the same methods, but in a different way, where the object list is hidden, until you call a function.
   featherFacts: function featherFacts() {
     document.getElementById("type").textContent = budgie.type;
@@ -64,13 +53,7 @@ var buttonFacts = document.querySelector(".fact-box");
 // Selecting the body and h2 element, they will be a part of one of the functions.
 var heading = document.querySelector(".pet");
 var background = document.querySelector("body");
-//Function whereas you get bitten by Ove the budgie, if you try to pet him (Background changes color to red and a warning text appears).
 
-function newHeadingAndBackground() {
-  heading.innerHTML = "You've been bitten";
-  heading.style.fontSize = "xxx-large";
-  background.style.backgroundColor = "red";
-}
 //Calling both functions, the first function controls the bite warning and background color, the second makes the object appear as a list
-buttonBite.onclick = newHeadingAndBackground;
+buttonBite.onclick = budgie.bite;
 buttonFacts.onclick = budgie.featherFacts;
